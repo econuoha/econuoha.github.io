@@ -46,6 +46,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+html{
+	font-size: auto;
+	
+}
 .navi{
 	font-size: 1.8rem;
 	position: fixed;
@@ -76,6 +80,7 @@ header img{
 
 .navi a:visited{
 	color: #B0C4DE;
+	overflow-x: scroll;
 }
 
 #projects{
