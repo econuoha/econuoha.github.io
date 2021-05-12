@@ -68,6 +68,7 @@
 
 .home .homepage .T1ext{
 	font-size: 27px;
+	font-weight: 600;
 }
 .home .homepage .T2ext{
 	font-size: 75px;
@@ -81,7 +82,9 @@
 
 .home .homepage .T3ext span{
 	font-weight: 500;
-	color: #00008B;
+	color: #C92A39;
+	text-transform: uppercase;
+	text-decoration:#111;
 }
 
 /* sizing */
