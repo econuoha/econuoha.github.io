@@ -6,6 +6,9 @@
 	box-sizing: border-box;
 	text-decoration: none;
 }
+body{
+	background-color: #B0C4DE;
+}
 .MW{
 	max-width: 1300px;
 	padding: 0 80px;
@@ -87,6 +90,9 @@
 	text-transform: uppercase;
 	text-decoration:#111;
 }
+.home .homepage .T3ext a{
+	color: #B0C4DE;
+}
 .T3ext a{
 	cursor:auto;
 }
@@ -94,21 +100,25 @@
 	color: #B0C4DE;
 }
 
-/* aboutMe screen */ 
+/* socialbar */ 
 .socialbar{
-	color: #D41032;
 	background:#B0C4DE;
 	font-size: 40px;
 	padding: 15px 0;
 	max-height: 300px;
+	border-bottom: solid 3px black;
 }
 .socialbar ul{
 	text-align: center;
 	
 }
 .socialbar li{
+	color: #D41032;
 	margin: 0 75px;
 	display: inline-block;
+}
+.socialbar a {
+	color:#D41032;
 }
 .socialbar a:visited {
 	color:#D41032;
@@ -121,19 +131,64 @@
 .socialbar a.gone{
 	display: none;
 }
-
-.aboutMe p{
-	border: solid #111;
+/* about me */ 
+.aboutMe h1{
+	text-decoration: underline;
+	font-weight: 1000;
+	font-size: 45px;
+	background-color: #B0C4DE;
+	text-align: center;
+	max-width: 55%;
+	min-width: 55%;
+	float: left;
+	padding: 10px;
+}
+#myPhoto{
+	max-width: 45%;
+	min-width: 45%;
+	float: left;
+}
+.whoAmI{
+	background-color: #B0C4DE;
+	font-family:'Ubuntu',sans-serif ;
+	overflow:auto;
 }
 
+.aboutMeParts{
+	list-style: none;
+	padding: 10px;
+	font-size: 35px;
+	font-weight: 400;
+	text-align: center;
+}
 
 /* sizing */
+@media (max-width: 1400px){
+	.aboutMeParts{
+		font-size: 30px;
+	}
+	
+}
+@media (max-width: 1200px){
+	.aboutMeParts{
+		font-size: 25px;
+	}
+	.aboutMe h1{
+		font-size: 40px;
+	}
+}
 @media (max-width: 1100px){
 	.home .MW{
 		margin-left: 0px;
 	}
 	.socialbar li{
 		margin: 0 65px;
+	}
+	.aboutMeParts{
+		font-size: 20px;
+	}
+	.aboutMe h1{
+		font-size: 35px;
 	}
 }
 
@@ -188,6 +243,22 @@
 	.home .homepage .T3ext{
 		font-size: 35px;
 	} 
+	.aboutMe h1{
+		width: 100%;
+		max-width: 100%;
+	}
+	#myPhoto{
+		max-width: none;
+		min-width: none;
+		width: 500px;
+		border-bottom: solid 3px black;
+		border-left: solid 3px black;
+		border-right: solid 3px black;
+		display:block;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 @media (max-width: 690px){
@@ -203,6 +274,15 @@
 	} 
 	.socialbar li{
 		margin: 0 20px;
+	}
+	#myPhoto{
+		width: 400px;
+	}
+	.aboutMeParts{
+		font-size: 16px;
+	}
+	.aboutMe h1{
+		font-size: 30px;
 	}
 }
 
@@ -221,10 +301,28 @@
 		margin: 0 20px;
 		font-size: 30px;
 	}
+	#myPhoto{
+		width: 300px;
+	}
+	.aboutMeParts{
+		font-size: 14px;
+	}
+	.aboutMe h1{
+		font-size: 30px;
+	}
 }
 @media (max-width: 392px){
 	.socialbar li{
 		margin: 0 15px;
+		font-size: 25px;
+	}
+	#myPhoto{
+		width: 250px;
+	}
+	.aboutMeParts{
+		font-size: 12px;
+	}
+	.aboutMe h1{
 		font-size: 25px;
 	}
 }
@@ -243,6 +341,15 @@
 		margin: 0 10px;
 		font-size: 20px;
 	}
+	#myPhoto{
+		width: 200px;
+	}
+	.aboutMeParts{
+		font-size: 12px;
+	}
+	.aboutMe h1{
+		font-size: 20px;
+	}
 }
 
 @media (max-width: 250px){
@@ -258,6 +365,15 @@
 	} 
 	.socialbar li{
 		margin: 0 5px;
+		font-size: 20px;
+	}
+	#myPhoto{
+		width: 170px;
+	}
+	.aboutMeParts{
+		font-size: 12px;
+	}
+	.aboutMe h1{
 		font-size: 20px;
 	}
 }
