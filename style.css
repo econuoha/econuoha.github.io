@@ -6,12 +6,7 @@
 	box-sizing: border-box;
 	text-decoration: none;
 }
-:root{
-	--primary: #D2691E;
-	--secondary: #FAEBD7;
-	--dark: #212121;
-	--light: #f3f3f3;
-}
+
 body{
 	background-color: #FFF;
 }
