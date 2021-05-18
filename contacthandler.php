@@ -11,7 +11,7 @@
         $txt = "You have received an e-mail from "
          .$firstname." ".$lastname.".\n".$company."\n".$message;
         $email_subject = "Website Contact: ".$firstname." ".$company.;
-        mail($to,$email_subject,$txt,$headers);
+        mail($mailTo,$email_subject,$txt,$headers);
         header("Location: contact.html?mailsend");
     }
     
