@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/afb61f74f2.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="scss\main.css">
+</head>
+<body>
+    <nav class="navibar">
+        <div class="MW">
+            <div class="myLogo"><a href="index.html#home">Home</a></div>
+            <ul class="menu">
+                <li><a href="Emmanuel_May_PreGrade_2021_Resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="index.html#aboutMe">About Me</a></li>
+                <li><a href="index.html#languages">Languages</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+            <div class="menubtn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="contactMe">
+            <div class="container">
+                <h1>Contact Me!</h1>
+                <p>
+                    If you want to reach out to me please fill out the form below.
+                    I will try to get back to you as quickly as possible! If I do not respond within 72 hours please feel free to
+                    reach out to me again.
+                </p>
+                <form method="POST" action="contact-handler.php">
+                    <div class = "formGroupindv">
+                        <label for="firstname">First Name*</label>
+                        <input type="text" name="firstname" id="firstname"
+                        required class="formElement" placeholder="CiCi">
+                    </div>
+                    <div class = "formGroupindv">
+                        <label for="lastname">Last Name*</label>
+                        <input type="text" name="lastname" id="lastname"
+                        required class="formElement" placeholder="Lu">
+                    </div>
+                    <div class = "formGroupindv">
+                        <label for="email">Email address*</label>
+                        <input type="email" name="email" id="email"
+                        required class="formElement" placeholder="cici.lu@example.com">
+                    </div>
+                    <div class = "formGroupindv">
+                        <label for="company">Company</label>
+                        <input type="text" name="company" id="company"
+                        class="formElement" placeholder="LinkedIn">
+                    </div>
+                    <div class = "formGroupFull">
+                        <label for="message">What would you like to say?</label>
+                        <textarea name="message" id="message" class="formElement"
+                        placeholder=" I'd love to invite you to apply to our Internship!"></textarea>
+                    </div>
+                    <div class="submit-group">
+                        <input type="submit" value="SEND">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="contact.js"></script>
+</body>
+</html>
