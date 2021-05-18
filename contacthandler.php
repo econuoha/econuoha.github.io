@@ -8,8 +8,7 @@
 
         $mailTo = "econuoha@uh.edu";
         $headers = "From: ".$visitor_email;
-        $txt = "You have received an e-mail from "
-         .$firstname." ".$lastname.".".$company."".$message;
+        $txt = "You have received an e-mail from ".$firstname." ".$lastname.".".$company."".$message;
         $email_subject = "Website Contact: ".$firstname." ".$company.;
         mail($mailTo, $email_subject, $txt, $headers);
         header("Location: contact.html?mailsend");
