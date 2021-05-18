@@ -6,7 +6,7 @@
         $message = $_POST['message'];
         $company = $_POST['company'];
 
-        $mailTo = "econuoha@uh.edu";
+        $mailTo = "testing@yahoo.com";
         $headers = "From: ".$visitor_email;
         $txt = "You have received an e-mail from ".$firstname." ".$lastname.".".$company."".$message;
         $email_subject = "Website Contact: ".$firstname." ".$company.;
