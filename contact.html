@@ -7,7 +7,7 @@
     <script src="https://kit.fontawesome.com/afb61f74f2.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Contact Me</title>
-    <link rel="stylesheet" href="scss\main.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <nav class="navibar">
@@ -34,7 +34,7 @@
                     I will try to get back to you as quickly as possible! If I do not respond within 72 hours please feel free to
                     reach out to me again.
                 </p>
-                <form method="POST" action="contact-handler.php">
+                <form method="post" action="contact-handler.php">
                     <div class = "formGroupindv">
                         <label for="firstname">First Name*</label>
                         <input type="text" name="firstname" id="firstname"
@@ -61,7 +61,7 @@
                         placeholder=" I'd love to invite you to apply to our Internship!"></textarea>
                     </div>
                     <div class="submit-group">
-                        <input type="submit" value="SEND">
+                        <input name = "submit" type="submit" value="SEND">
                     </div>
                 </form>
             </div>

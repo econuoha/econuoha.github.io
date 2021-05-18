@@ -1,23 +1,19 @@
 <?php
-    $name = $_POST['name'];
-    $visitor_email = $_POST['email'];
-    $message = $_POST['message'];
+    if(isset($_POST['submit'])){
+        $firstname = $_POST['firstname'];
+        $lastname = $_POST['lastname'];
+        $visitor_email = $_POST['email'];
+        $message = $_POST['message'];
+        $company = $_POST['company'];
 
+        $mailTo = "econuoha@uh.edu";
+        $headers = "From: ".$visitor_email;
+        $txt = "You have received an e-mail from "
+         .$firstname." ".$lastname.".\n".$company."\n".$message;
 
-    $email_from = 'econuoha.github.io';
-
-    $email_subject = "Website Form Submission";
-
-    $email_body = "User Name: $name.\n". 
-                    "User Email: $visitor_email.\n".
-                        "User Message: $message.\n";
-    $to = "emanonuoha@gmail.com"
-
-    $headers = "From: $email_from \r\n";
-
-    $headers.= "Reply-To: $visitor_email \r\n";
-
-    mail($to,$email_subject,$email_body,$headers);
-
+        mail($to,$email_subject,$txt,$headers);
+        header("Location: contact.html?mailsend");
+    }
+    
     header("Location: contact.html");
 ?>
