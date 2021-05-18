@@ -14,6 +14,3 @@
         mail($mailTo,$email_subject,$txt,$headers);
         header("Location: contact.html?mailsend");
     }
-    
-    header("Location: contact.html");
-?>
