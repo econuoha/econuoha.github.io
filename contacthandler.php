@@ -1,16 +1,18 @@
 <?php
+    $firstname = $_POST['firstname'];
+    $lastname = $_POST['lastname'];
+    $visitor_email = $_POST['email'];
+    $message = $_POST['message'];
 
-        $firstname = $_POST['firstname'];
-        $lastname = $_POST['lastname'];
-        $visitor_email = $_POST['email'];
-        $message = $_POST['message'];
-        $company = $_POST['company'];
-
-        $mailTo = "testing@yahoo.com";
-        $headers = "From: ".$visitor_email;
-        $txt = "You have received an e-mail from ".$firstname." ".$lastname.".".$company."".$message;
-        $email_subject = "Website Contact: ".$firstname." ".$company.;
-        mail($mailTo, $email_subject, $txt, $headers);
-        header("Location: contact.html?mailsend");
+    $email_from = 'econuoha@uh.edu';
+    $email_subject = 'New Form Submission';
+    $email_body = 'User Name: $firstname.\n'. 
+                    'User Email:$visitor_email.\n'.
+                        'User Message:$message.\n';
+    $to = 'emanonuoha@gmail.com';
+    $headers = 'From:$email_from\r\n';
+    $headers = 'Reply-To:$visitor_email\r\n';
+        mail($to, $email_subject, $email_body, $headers);
+        header(Location: contact.html);
 
 ?>
