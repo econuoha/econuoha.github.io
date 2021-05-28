@@ -28,13 +28,27 @@
     <main>
         <section class="contactMe">
             <div class="container">
-                <h1>Contact Me!</h1>
+                <h1 id="test">Contact Me!</h1>
                 <p>
-                    If you want to reach out to me please fill out the form below.
+                    If you want to reach out to me please reach out to me through email.
                     I will try to get back to you as quickly as possible! If I do not respond within 72 hours please feel free to
                     reach out to me again.
                 </p>
-                <form method="POST" action="contacthandler.php" id="myForm">
+                <div class="addy">
+                    <div class = "name" id="myName">
+                        <h1><i class="fas fa-user"></i>  Name:&emsp;Emmanuel Onuoha</h1>
+                    </div>
+                    <div class="email" id="myEmail">
+                        <h1><i class="fas fa-envelope"></i>  Email:
+                            &emsp;emanonuoha@gmail.com</i>
+                            <div class="btn"><button>Copy to Clipboard</button><span class="tooltip">Copied!</span></div>
+                        </h1>
+                    </div>
+                    <div class="location" id="myLocation">
+                        <h1><i class="fas fa-plane-departure"></i>  Location:&emsp;Dallas–Fort Worth metroplex</h1>
+                    </div>
+                </div>
+                <!-- <form method="POST" action="" id="myForm">
                     <div class = "formGroupindv">
                         <label for="firstname">First Name*</label>
                         <input type="text" name="firstname" id="firstname"
@@ -63,7 +77,10 @@
                     <div class="submit-group">
                         <input name = "submit" type="submit" value="SEND">
                     </div>
-                </form>
+                </form> -->
+            </div>
+            <div class="forCopy">
+                <textarea id="copyText" cols="10" rows="10">emanonuoha@gmail.com</textarea>
             </div>
         </section>
     </main>
