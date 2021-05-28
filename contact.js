@@ -17,6 +17,7 @@ $(document).ready(function(){
     button.addEventListener('click', function(){
         copyText.select();
         document.execCommand("copy");
+        button.focus();
         tooltip.classList.add("show");
         setTimeout(function(){
             tooltip.classList.remove("show");
