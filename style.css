@@ -497,6 +497,14 @@ body{
 #popup3{
 	top: 50%;
 }
+#spot{
+	font-weight: bold;
+	width: 100%;
+	left: 50%;
+	right: 50%;
+	padding-left: auto;
+	padding-right: auto;
+}
 /* sizing */
 @media (max-width: 1700px){
 
