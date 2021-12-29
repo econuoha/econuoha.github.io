@@ -68,7 +68,8 @@ body{
 /* homepage */
 .home{
 	display: flex;
-	background: url("Website Background.jpg") no-repeat center;
+	background: url("VisionBoardCC.jpeg") no-repeat center;
+	max-width: 100%;
 	height: 100vh;
 	color: #f3f3f3;
 	min-height: 500px;
@@ -508,21 +509,12 @@ body{
 /* sizing */
 @media (max-width: 1700px){
 
-	.home{
-		background-position-x: -1270px;
-	}
 }
 @media (max-width: 1600px){
 
-	.home{
-		background-position-x: -1370px;
-	}
 }
 @media (max-width: 1500px){
 
-	.home{
-		background-position-x: -1420px;
-	}
 	.aboutMeParts{
 		font-size: 30px;
 	}
@@ -530,9 +522,6 @@ body{
 @media (max-width: 1400px){
 	.aboutMeParts{
 		font-size: 27px;
-	}
-	.home{
-		background-position-x: -1501px;
 	}
 	.card__body p {
 		font-size: 16px;
@@ -545,9 +534,6 @@ body{
 @media (max-width: 1300px){
 	.aboutMeParts{
 		font-size: 25px;
-	}
-	.home{
-		background-position-x: -1600px;
 	}
 	.home .homepage .T2ext{
 		font-size: 50px;
@@ -570,9 +556,6 @@ body{
 	}
 	.aboutMe h1{
 		font-size: 40px;
-	}
-	.home{
-		background-position-x: -1700px;
 	}
 	.card__body h3 {
 		font-size: 20px;
@@ -598,9 +581,6 @@ body{
 	}
 	.aboutMe h1{
 		font-size: 35px;
-	}
-	.home{
-		background-position-x: -1750px;
 	}
 	.card__body p {
 		font-size: 14px;
