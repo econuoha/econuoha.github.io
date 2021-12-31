@@ -33,7 +33,6 @@ $(document).ready(function(){
 
     // Get all the images
     image_array = [
-    'all images\\IMG-3088.JPG',
     'all images\\96C06788-0D72-42F7-B682-ED3F66D2F6BB.JPG',
     'all images\\669442A7-A7E1-4243-887D-A2A520D468CE.JPG',
     'all images\\C605DC33-BC37-4692-8FD5-4C66241ED64A.JPG',
@@ -47,7 +46,6 @@ $(document).ready(function(){
     'all images\\fb.jpg',
     'all images\\IMG_2317.JPG',
     'all images\\IMG_3577.JPG',
-    'all images\\IMG-3088.JPG',
     'all images\\64608687510__5D94BA21-EA01-46B7-B75C-1147234B09FE.HEIC.jpg',
     'all images\\IMG_9472.HEIC.jpg',
     'all images\\IMG_7098.HEIC.jpg',
