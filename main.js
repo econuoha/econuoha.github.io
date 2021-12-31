@@ -82,6 +82,7 @@ $(document).ready(function(){
     let pop3 = document.getElementById('popup3');
     let pop4 = document.getElementById('popup4');
     let pop5 = document.getElementById('popup5');
+    let pop6 = document.getElementById('popup6');
     $('.bottom a').click(function(){
         blur.classList.toggle('active');
     });
@@ -119,5 +120,12 @@ $(document).ready(function(){
     $('#fifthPop').click(function(){
         blur.classList.toggle('active');
         pop5.classList.toggle('active');
+    });
+    $('#sixthRead').click(function(){
+        pop6.classList.toggle('active');
+    });
+    $('#sixthPop').click(function(){
+        blur.classList.toggle('active');
+        pop6.classList.toggle('active');
     });
 });

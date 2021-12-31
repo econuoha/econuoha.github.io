@@ -524,6 +524,7 @@ body{
 	transition: 0.4s;
 	z-index: 20;
 	max-height: 80%;
+	overflow: scroll;
 }
 .popups a{
 	text-decoration: none;
@@ -554,6 +555,10 @@ body{
 	visibility: visible;
 	opacity: 1;
 }
+#popup6.active{
+	visibility: visible;
+	opacity: 1;
+}
 
 #popup3{
 	top: 50%;
@@ -565,7 +570,6 @@ body{
 	text-align: center;
 	font-size: 20px;
 	font-weight: 1000;
-	
 }
 #spot.p {
 	padding-bottom: 30px;
