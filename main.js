@@ -33,6 +33,11 @@ $(document).ready(function(){
 
     // Get all the images
     image_array = [
+    'all images\\ahead.jpg',
+    'all images\\nik.jpg',
+    'all images\\IMG-1407.jpg',
+    'all images\\IMG-1406.jpg',
+    'all images\\pdx.jpg',
     'all images\\96C06788-0D72-42F7-B682-ED3F66D2F6BB.JPG',
     'all images\\669442A7-A7E1-4243-887D-A2A520D468CE.JPG',
     'all images\\C605DC33-BC37-4692-8FD5-4C66241ED64A.JPG',
