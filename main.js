@@ -88,6 +88,9 @@ $(document).ready(function(){
     let pop4 = document.getElementById('popup4');
     let pop5 = document.getElementById('popup5');
     let pop6 = document.getElementById('popup6');
+    let pop7 = document.getElementById('popup7');
+    let pop8 = document.getElementById('popup8');
+    let pop9 = document.getElementById('popup9');
     $('.bottom a').click(function(){
         blur.classList.toggle('active');
     });
@@ -132,5 +135,26 @@ $(document).ready(function(){
     $('#sixthPop').click(function(){
         blur.classList.toggle('active');
         pop6.classList.toggle('active');
+    });
+    $('#seventhRead').click(function(){
+        pop7.classList.toggle('active');
+    });
+    $('#seventhPop').click(function(){
+        blur.classList.toggle('active');
+        pop7.classList.toggle('active');
+    });
+    $('#eightRead').click(function(){
+        pop8.classList.toggle('active');
+    });
+    $('#eightPop').click(function(){
+        blur.classList.toggle('active');
+        pop8.classList.toggle('active');
+    });
+    $('#ninthRead').click(function(){
+        pop9.classList.toggle('active');
+    });
+    $('#ninthPop').click(function(){
+        blur.classList.toggle('active');
+        pop9.classList.toggle('active');
     });
 });

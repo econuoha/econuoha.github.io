@@ -559,7 +559,18 @@ body{
 	visibility: visible;
 	opacity: 1;
 }
-
+#popup7.active{
+	visibility: visible;
+	opacity: 1;
+}
+#popup8.active{
+	visibility: visible;
+	opacity: 1;
+}
+#popup9.active{
+	visibility: visible;
+	opacity: 1;
+}
 #popup3{
 	top: 50%;
 }
