@@ -67,7 +67,7 @@ body{
 
 /* homepage */
 .home{
-	background: url("all images\\VisionBoardCC.jpeg");
+	background: url("all images\\webback.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 110vh;
@@ -306,7 +306,18 @@ body{
   .card__inner4.is-flipped {
 	transform: rotateY(180deg);
 }
-
+.card__inner5 {
+	width: 100%;
+	height: 100%;
+	transition: transform 1s;
+	transform-style: preserve-3d;
+	cursor: pointer;
+	position: relative;
+}
+  
+  .card__inner5.is-flipped {
+	transform: rotateY(180deg);
+}
   .card__face {
 	position: absolute;
 	height: 100%;
@@ -392,6 +403,10 @@ body{
 	font-size: 70px;
 }
 
+#swift{
+	font-size: 70px;
+}
+
 .projects h1{
 	color: #111;
 	padding: 15px;
@@ -454,7 +469,7 @@ body{
 .row-2 section::before{
 	left: -7px;
 }
-.row section .icon, .center-line .scroll-icon{
+.row section i, .center-line .scroll-icon{
 	position: absolute;
 	background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
 	height: 40px;
@@ -473,11 +488,11 @@ body{
 	font-size: 25px;
 	transform: translateX(-50%);
 }
-.row-1 section .icon{
+.row-1 section i{
 	top: 13px;
 	right: -60px;
 }
-.row-2 section .icon{
+.row-2 section i{
 	top: 13px;
 	left: -60px;
 }
@@ -691,7 +706,7 @@ body{
 		padding: 0 50px;
 	}
 	.home{
-		background: url("all images\\emmanuel.JPEG");
+		background: url("all images\\mobileBack.png");
 		background-size: 100%;
 		background-position-y: 70px;
 		
@@ -767,6 +782,12 @@ body{
 		margin-right: auto;
 		display: block;
 	}
+	#ytvid{
+		width: 50%;
+		/*
+			width="560" height="315"
+		*/
+	}
 	#hcj{
 		font-size: 60px;
 	}
@@ -798,7 +819,7 @@ body{
 	.row-1 section::before{
 		left: -7px;
 	}
-	.row-1 section .icon{
+	.row-1 section i{
 		left: -60px;
 	}
 }
@@ -810,7 +831,7 @@ body{
 @media (max-width: 440px){
 	.wrapper .center-line,
 	.row section::before,
-	.row section .icon{
+	.row section i{
 		display: none;
 	}
 	.wrapper .row{

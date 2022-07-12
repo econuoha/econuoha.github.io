@@ -31,6 +31,11 @@ $(document).ready(function(){
     card4.classList.toggle('is-flipped');
     });
 
+    const card5 = document.querySelector(".card__inner5");
+    card5.addEventListener("click", function (e) {
+    card5.classList.toggle('is-flipped');
+    });
+
     // Get all the images
     image_array = [
     'all images\\ahead.jpg',
