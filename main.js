@@ -76,9 +76,18 @@ $(document).ready(function(){
     'all images\\IMG_0423.HEIC.jpg',
     ]
     const randPhoto = document.getElementById('button_container');
+    const myButton = document.querySelector('button');
     randPhoto.addEventListener("click", function(e){
-        random_index = Math.floor(Math.random() * image_array.length);
-        selected_image = image_array[random_index]
+        if (image_array.length == 1) {
+            selected_image = 'all images\\IMG-4973.jpg'
+            myButton.style.cursor = 'default';
+            myButton.style.backgroundColor = 'gray';
+        } else {
+            random_index = Math.floor(Math.random() * image_array.length);
+            selected_image = image_array[random_index]
+            image_array.splice(random_index,1) 
+            console.log(image_array.length)  
+        }
         // Display the image
         document.getElementById('myPhoto').src = `${selected_image}`
     });
@@ -96,6 +105,7 @@ $(document).ready(function(){
     let pop7 = document.getElementById('popup7');
     let pop8 = document.getElementById('popup8');
     let pop9 = document.getElementById('popup9');
+    let pop10 = document.getElementById('popup10');
     $('.bottom a').click(function(){
         blur.classList.toggle('active');
     });
@@ -161,5 +171,12 @@ $(document).ready(function(){
     $('#ninthPop').click(function(){
         blur.classList.toggle('active');
         pop9.classList.toggle('active');
+    });
+    $('#tenthRead').click(function(){
+        pop10.classList.toggle('active');
+    });
+    $('#tenthPop').click(function(){
+        blur.classList.toggle('active');
+        pop10.classList.toggle('active');
     });
 });
